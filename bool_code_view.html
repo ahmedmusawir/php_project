@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+<link href="css/mystyle.css" rel="stylesheet" media="screen">
+
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=basic&skin=desert"></script>    
+
+<style type="text/css">
+ pre {
+  font-family: "Courier New";
+}
+</style>
+
+</head>
+<body>
+
+<section id="variables" >
+
+<article>
+<pre class="prettyprint pre-scrollable">
+<xmp>
+
+	<html>
+	<head><title>Booleans and NULLS</title></head>
+	<body>
+	<h2>Booleans</h2>
+	<h4>True = 1 and False = [nothing]</h4>
+
+		<?php 
+			$bool1 = true;
+			$bool2 = false;
+		?>
+		$bool1: <?php echo $bool1; ?>
+		<br/>
+		$bool2: <?php echo $bool2; ?>
+		<br/>
+		<?php 
+			$var1 = 3;
+			$var2 = "cat";
+			$var4 = 0;
+			$var5 = NULL;
+		?>
+
+
+	<h2>The isset</h2>
+
+	$var1 is set: <?php echo isset($var1); ?> <br/> 
+	$var1 is set: <?php echo isset($var2); ?> <br/> 
+	$var1 is set: <?php echo isset($var3); ?> <br/> 
+	<br/> 
+	<?php unset($var1); echo "\$var1 was unset: " ?><br/><br/>
+	$var1 is set: <?php echo isset($var1); ?> <br/> 
+	$var1 is set: <?php echo isset($var2); ?> <br/> 
+	$var1 is set: <?php echo isset($var3); ?> <br/> 
+	<br/> 
+	$var2 is Empty: <?php echo empty($var2); ?> <br/> 
+	$var3 is Empty: <?php echo empty($var3); ?> <br/> 
+	$var4 is Empty: <?php echo empty($var4); ?> <br/> 
+	$var5 is Empty: <?php echo empty($var5); ?> <br/> 
+
+	</body>
+	</html>
+
+</xmp>
+</pre>
+</article>
+
+<aside>
+<span id="run_code_btn" class="btn btn-primary">Run Code</span>
+<h2 class="btn btn-info btn-block disabled">Result Pane</h2>
+</aside>
+
+<div id="display_result"></div>
+
+</section> <!--MAIN CODE VIEW ENDS -->
+
+<script src="//code.jquery.com/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $('#run_code_btn').on('click', function(){
+      $( "#display_result" ).load( "php_pages/data_and_var_code_run.php #booleans" ).hide().fadeToggle(2000);
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

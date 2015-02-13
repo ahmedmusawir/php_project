@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+<link href="css/mystyle.css" rel="stylesheet" media="screen">
+
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=basic&skin=desert"></script>    
+
+<style type="text/css">
+ pre {
+  font-family: "Courier New";
+}
+</style>
+
+</head>
+<body>
+
+<section id="variables" >
+
+<article>
+<!-- ONLY CODE INCLUDES GO HERE -->
+
+<pre class="prettyprint pre-scrollable">
+<xmp>
+	<h3>Loops: while : Block 1</h3>
+	<?php
+		$count = 0;
+
+		while ($count <= 10) {
+			echo $count . " , ";
+			$count++;
+		}
+		echo "Total Count: {$count}";
+	?>
+	<h3>Loops: while: Block 2</h3>
+	<?php
+		$count = 0;
+
+		while ($count <= 10) {
+
+			if ($count == 5) {
+				echo " Five ";
+			}
+			else {
+				echo $count . " , ";
+			}
+			$count++;
+		}
+		echo "Total Count: {$count}";
+	?>
+<!-- PHP SECTION whileloop END -->
+
+
+
+</xmp>
+</pre>
+<!-- ONLY CODE INCLUDES GO HERE -->
+
+</article>
+
+<aside>
+<span id="run_code_btn" class="btn btn-primary">Run Code</span>
+<h2 class="btn btn-info btn-block disabled">Result Pane</h2>
+</aside>
+
+<div id="display_result"></div>
+
+</section> <!--MAIN CODE VIEW ENDS -->
+
+<script src="//code.jquery.com/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $('#run_code_btn').on('click', function(){
+      $( "#display_result" ).load( "php_pages/control_flow_and_loops.php #whileloop" ).hide().fadeToggle(2000);
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=basic&skin=desert"></script>    
+<link href="css/mystyle.css" rel="stylesheet" media="screen">
+
+<style type="text/css">
+ pre {
+  font-family: "Courier New";
+}
+</style>
+
+</head>
+<body>
+
+<section id="variables" >
+
+<article>
+<pre class="prettyprint">
+<xmp>
+<?php
+//VARIABLES
+
+	$var = 10;
+	echo "The Value of \$var is: " . $var; 
+
+	$my_var = "Hello PHP";
+	echo "The Value of \$my_var is: " . $my_var;
+	$my_var = "Hello PHP Again";
+	echo "The New Value of \$my_var is: " . $my_var ;
+	$var = 100;
+	echo "The New Value of \$var is: " . $var ; 
+
+?>
+
+</xmp>
+</pre>
+</article>
+
+<aside>
+<span id="run_code_btn" class="btn btn-primary">Run Code</span>
+<h2 class="btn btn-info btn-block disabled">Result Pane</h2>
+</aside>
+
+<div id="display_result"></div>
+
+</section> <!--MAIN CODE VIEW ENDS -->
+
+<script src="//code.jquery.com/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $('#run_code_btn').on('click', function(){
+      $( "#display_result" ).load( "php_pages/data_and_var_code_run.php #variables" );
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

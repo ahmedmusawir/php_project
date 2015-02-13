@@ -1,0 +1,131 @@
+body {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+.code-color {
+  background: #F9F2F4;
+  -webkit-box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+
+}
+
+.btn-primary.disabled {
+  background: #353535;
+
+  -webkit-box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+}
+
+.btn-info.disabled {
+   background: #353535;
+
+   -webkit-box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+}
+
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+/***** START OF LEFT NAV ACCORDION ****/
+
+.jumbotron {
+        padding: 2em;
+
+        -webkit-box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+      }
+.jumbotron h1 {
+         font-size: 2em;
+         text-shadow: 0px 1px 0px #fff;
+      }
+
+      .btn-block {
+        color: white;
+        font-size: 1.5em;
+      }
+      
+      .page-header h1 {
+        font-size: 2.5em;
+      }
+      .page-header small {
+        font-size: .7em;
+      }
+      .container{
+        //display: none;
+      }
+
+/**** STYLE FOR THE LEFT NAV ****/
+.left_menu {
+  margin-top: 1.5em;
+  -webkit-box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 34px -6px rgba(0,0,0,0.75);
+}
+#leftMenu .accordion-group {
+    margin-bottom: 0px;
+    border:0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}    
+
+#leftMenu .accordion-heading {
+    height: 34px;
+    border-top: 1px solid #717171; /* inner stroke */
+    border-bottom: 1px solid #5A5A5A; /* inner stroke */
+    background-color: #353535; /* layer fill content */
+    background-image: -moz-linear-gradient(90deg, #595b59 0%, #616161 100%); /* gradient overlay */
+    background-image: -o-linear-gradient(90deg, #595b59 0%, #616161 100%); /* gradient overlay */
+    background-image: -webkit-linear-gradient(90deg, #595b59 0%, #616161 100%); /* gradient overlay */
+    background-image: linear-gradient(90deg, #595b59 0%, #616161 100%); /* gradient overlay */
+    list-style-type:none;
+}  
+
+#leftMenu .accordion-heading  a{  
+    color: #cbcbcb; /* text color */
+    text-shadow: 0 1px 0 #3b3b3b; /* drop shadow */
+    text-decoration:none;
+    font-weight:bold;  
+}
+
+#leftMenu .accordion-heading  a:hover{  
+    color:#ccc     
+}
+
+#leftMenu .accordion-heading .active {
+    width: 182px;
+    height: 34px;
+    border: 1px solid #5b5b5b; /* inner stroke */
+    background-color: #353535; /* layer fill content */
+    background-image: -moz-linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+    background-image: -o-linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+    background-image: -webkit-linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+    background-image: linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+}
+
+i {
+  padding-left: 1.5em;
+}
+
+/***** END OF LEFT NAV ACCORDION ****/

@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+<link href="css/mystyle.css" rel="stylesheet" media="screen">
+
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=basic&skin=desert"></script>    
+
+<style type="text/css">
+ pre {
+  font-family: "Courier New";
+}
+</style>
+
+</head>
+<body>
+
+<section id="variables" >
+
+<article>
+<!-- ONLY CODE INCLUDES GO HERE -->
+
+<pre class="prettyprint pre-scrollable">
+<xmp>
+<h3>Loops: continue</h3>
+<?php 
+	for ($count=0; $count <= 10; $count++) { 
+		if ($count == 5) {
+			continue;
+		}
+		echo $count . ", ";
+	}
+	echo "<br> 5 should be missing ..."
+?>
+<h3>Loops: break</h3>
+<?php 
+	for ($count=0; $count <= 10; $count++) { 
+		if ($count == 8) {
+			break;
+		}
+		echo $count . ", ";
+	}
+	echo "<br> After 7, the rest should be missing ..."
+?>
+<h3>Loops: Pointers</h3>
+<?php
+	$ages = array(3, 5, 34, 56, 2, 64 );
+
+	echo "1: " . current($ages) . "<br>";
+	next($ages);
+	echo "2: " . current($ages) . "<br>";
+	next($ages);
+	echo "3: " . current($ages) . "<br>";
+
+	//while loop that moves the array pointer
+	echo "while loop that moves the array pointer<br>";
+	while ($age = current($ages)) {
+		echo $age . ", ";
+		next($ages);
+	}
+?>
+
+</xmp>
+</pre>
+<!-- ONLY CODE INCLUDES GO HERE -->
+
+</article>
+
+<aside>
+<span id="run_code_btn" class="btn btn-primary">Run Code</span>
+<h2 class="btn btn-info btn-block disabled">Result Pane</h2>
+</aside>
+
+<div id="display_result"></div>
+
+</section> <!--MAIN CODE VIEW ENDS -->
+
+<script src="//code.jquery.com/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $('#run_code_btn').on('click', function(){
+      $( "#display_result" ).load( "php_pages/control_flow_and_loops.php #contbreak" ).hide().fadeToggle(2000);
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

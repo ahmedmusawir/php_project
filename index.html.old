@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mobile View Desktop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/mystyle.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
+    [if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+    [endif]
+    -->
+  <style type="text/css">
+  </style>
+
+  </head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">The Folio</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../htmlcss.html">HTML5 & CSS3</a></li>
+            <li><a href="../javascript.html">JavaScript</a></li>
+            <li><a href="../jquery.html">jQuery</a></li>
+            <li class="active"><a href="../the_rest.html">The Rest</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+     </div>
+  </nav> <!--END OF TOP NAV -->
+
+
+<section class="container">
+
+  <header class="page-header">
+  <div class="container">
+  <h1><span class="glyphicon glyphicon-tower"></span>PHP Project: The Basics<br/> <small>A Basic Overview of PHP Coding</small></h1>
+  </div>
+  </header>
+
+    
+    <div class="row"> <!-- ROW 0 BEGIN-->
+
+      <article class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+                   <div class="accordion" id="leftMenu">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                  <a href="index.html"><i class="glyphicon glyphicon-home"></i> PHP DASHBOARD </a>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseTwo">
+                                <i class="glyphicon glyphicon-fullscreen"></i> Data Types & Variables
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li class="btn btn-primary btn-block" id="get_var_code"><span>Variables</span></li>
+                                    <li class="btn btn-info btn-sm btn-block" id="get_str_code"><span>Strings</span></li>
+                                    <li class="btn btn-primary btn-sm btn-block" id="get_num_code"><span>Numbers</span></li>
+                                    <li class="btn btn-info btn-sm btn-block" id="get_array_code"><span>Arrays</span></li>
+                                    <li class="btn btn-primary btn-sm btn-block" id="get_bool_code"><span>Booleans</span></li>
+                                    <li class="btn btn-info btn-sm btn-block" id="get_type_code"><span>Typecasting</span></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseThree">
+                                <i class="glyphicon glyphicon-random"></i> Control Flow & Loops
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li class="btn btn-primary btn-block" id="get_ifelse_code"><span>Flow: If Else</span></li>
+                                    <li class="btn btn-success btn-block" id="get_switch_code"><span>Flow: Switch</span></li>
+                                    <li class="btn btn-primary btn-block" id="get_while_code"><span>While Loop</span></li>
+                                    <li class="btn btn-success btn-block" id="get_for_code"><span>For Loop</span></li>
+                                    <li class="btn btn-primary btn-block" id="get_cont_code"><span>Continue & Break</span></li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFour">
+                                <i class="glyphicon glyphicon-indent-left"></i> User Defined Functions
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>This is one</li>
+                                    <li>This is two</li>
+                                    <li>This is Three</li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFive">
+                                <i class="glyphicon glyphicon-list-alt"></i> Methods & Form Data 
+                            </a>
+                        </div>
+                        <div id="collapseFive" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>This is one</li>
+                                    <li>This is two</li>
+                                    <li>This is Three</li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseSix">
+                                <i class="glyphicon glyphicon-adjust"></i> Cookies & Sessions
+                            </a>
+                        </div>
+                        <div id="collapseSix" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>This is one</li>
+                                    <li>This is two</li>
+                                    <li>This is Three</li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                </div>
+
+        </div> <!--LEFT MENU -->
+
+      </article> <!--ARTICLE 1 ENDS -->
+
+      <article class="col-sm-8 col-md-8">
+      <h2 class="btn btn-block btn-primary disabled">Code View</h2>
+      
+        <div id="code_pane" class="thumbnail">
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=basic&skin=default"></script> 
+          
+          <pre class="prettyprint pre-scrollable">
+  <xmp>
+  <?php
+      // BASIC COMMENTING AND OUTPUT OPTIONS 
+
+      // this is a single line comment
+      # This is another way to make comment
+      
+      /*
+      This is a 
+      Multi Line 
+      Comment 
+      */
+
+      echo "Hello World !! -- using echo";
+      print "Hello World !! -- using print";
+
+      echo "Hello" . " World !! -- String Concatenation";
+  ?>
+  
+  Adding Numbers:  2 + 2 = <?php echo 2+2; ?> 
+
+  <?php
+      echo "The End";
+  ?>
+            </xmp>
+          </pre>
+          <article>
+          <span id="run_code" class="btn btn-primary">Run Code</span>
+          <h2 class="btn btn-info btn-block disabled">Resust Pane</h2>
+          </article>
+
+          <section id="display_code"></section>
+
+
+        </div> <!-- END OF CODE VIEW -->
+
+        
+      
+       
+      </article> <!--ARTICLE 2 ENDS -->
+
+    </div> <!-- ROW 1 ENDS --> 
+
+
+</section> <!-- MAIN CONTENT END -->
+
+
+<footer class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">PHP Project &copy; 2013</a>
+        </div>
+        
+     </div>
+</footer> <!--END OF FOOTER -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        // fade in content.
+        //$( '.container' ).fadeIn(3000);   
+
+        $('#run_code').on('click', function(){
+          $( "#display_code" ).load( "php_pages/run_code.php #main").hide().fadeToggle(2000);
+
+        });
+
+        $('#get_var_code').on('click', function(){
+          $( "#code_pane" ).load( "var_code_view.html");
+
+        });
+
+        $('#get_str_code').on('click', function(){
+          $( "#code_pane" ).load( "str_code_view.html");
+
+        });
+
+        $('#get_num_code').on('click', function(){
+          $( "#code_pane" ).load( "num_code_view.html");
+
+        });
+        $('#get_array_code').on('click', function(){
+          $( "#code_pane" ).load( "array_code_view.html");
+
+        });
+        $('#get_bool_code').on('click', function(){
+          $( "#code_pane" ).load( "bool_code_view.html");
+
+        });
+        $('#get_type_code').on('click', function(){
+          $( "#code_pane" ).load( "type_code_view.html");
+
+        });
+
+        $('#get_ifelse_code').on('click', function(){
+          $( "#code_pane" ).load( "ifelse_code_view.html");
+
+        });
+
+        $('#get_switch_code').on('click', function(){
+          $( "#code_pane" ).load( "switch_code_view.html");
+
+        });
+
+        $('#get_while_code').on('click', function(){
+          $( "#code_pane" ).load( "whileloop_code_view.html");
+
+        });
+
+        $('#get_for_code').on('click', function(){
+          $( "#code_pane" ).load( "forloop_code_view.html");
+
+        });
+
+        $('#get_cont_code').on('click', function(){
+          $( "#code_pane" ).load( "contbreak_code_view.html");
+
+        });
+
+
+
+    });
+
+    </script>
+  </body>
+</html>

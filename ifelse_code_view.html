@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+<link href="css/mystyle.css" rel="stylesheet" media="screen">
+
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=basic&skin=desert"></script>    
+
+<style type="text/css">
+ pre {
+  font-family: "Courier New";
+}
+</style>
+
+</head>
+<body>
+
+<section id="variables" >
+
+<article>
+<!-- ONLY CODE INCLUDES GO HERE -->
+<pre class="prettyprint pre-scrollable">
+<xmp>
+
+<section id="ifelse">
+
+<h3> ifelse: Block 1</h3>	
+	<?php
+
+	  $a = 5;
+	  $b = 4;
+
+	  if ($a > $b){
+	  	echo "a is bigger than b";
+	  }
+	  elseif ($a == $b) {
+	  	echo "a is equal to b";
+	  }
+	  else {
+	  	echo "a is smaller than b";
+	  }
+
+	?>
+
+<br>
+
+<h3> ifelse: Block 2</h3>
+
+<?php 
+	
+	$c = 1;
+	$d = 23;
+
+	if (($a > $b) && ($d > $c)) {
+		echo "a is larger than b AND ";
+		echo "d is larger than c";
+	}
+	
+	echo "<br>";
+
+	if (($a > $b) || ($c > $d)) {
+		echo "a is larger than b OR ";
+		echo "d is larger than c";
+	}
+	else {
+		echo "neither a is larger than b nor c is larger than d";
+	}
+
+?>	
+
+<br>
+
+<h3> ifelse: Block 3</h3>
+
+<?php 
+	
+	if (!isset($a)) {
+		$a = 100;
+	}
+
+	echo "Value of a After Resetting:  $a ";
+
+?>
+<br>
+
+<h3> ifelse: Block 4</h3>
+
+<?php 
+	
+	if (is_int($a)) {
+		settype($a, "string");
+	}
+
+	echo "Type of a After Resetting: " . gettype($a) ;
+
+?>
+<br>
+
+<h3> ifelse: Block 5</h3>
+
+<?php 
+	
+	unset($a);
+
+	if (!isset($a)) {
+		$a = 100;
+	}
+
+	echo "Value of a After unset:  $a ";
+
+?>
+<br>
+
+</section>
+<!-- PHP SECTION ifelse END -->
+</xmp>
+</pre>
+
+
+<!-- ONLY CODE INCLUDES GO HERE -->
+</article>
+
+<aside>
+<span id="run_code_btn" class="btn btn-primary">Run Code</span>
+<h2 class="btn btn-info btn-block disabled">Result Pane</h2>
+</aside>
+
+<div id="display_result"></div>
+
+</section> <!--MAIN CODE VIEW ENDS -->
+
+<script src="//code.jquery.com/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $('#run_code_btn').on('click', function(){
+      $( "#display_result" ).load( "php_pages/control_flow_and_loops.php #ifelse" ).hide().fadeToggle(2000);
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

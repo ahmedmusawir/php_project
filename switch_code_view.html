@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+<link href="css/mystyle.css" rel="stylesheet" media="screen">
+
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=basic&skin=desert"></script>    
+
+<style type="text/css">
+ pre {
+  font-family: "Courier New";
+}
+</style>
+
+</head>
+<body>
+
+<section id="variables" >
+
+<article>
+<!-- ONLY CODE INCLUDES GO HERE -->
+
+<pre class="prettyprint pre-scrollable">
+<xmp>
+<h3>switch: Block</h3>
+<?php
+$a = 3;
+
+switch ($a) {
+	case 0:
+		echo "a is equal to 0";
+		break;
+	case 1:
+		echo "a is equal to 1";
+		break;
+	case 2:
+		echo "a is equal to 2";
+		break;
+	default:
+		echo "a is not equal to 0, 1 or 2";
+		break;
+}
+
+?>
+<!-- PHP SECTION switch END -->
+
+
+</xmp>
+</pre>
+<!-- ONLY CODE INCLUDES GO HERE -->
+
+</article>
+
+<aside>
+<span id="run_code_btn" class="btn btn-primary">Run Code</span>
+<h2 class="btn btn-info btn-block disabled">Result Pane</h2>
+</aside>
+
+<div id="display_result"></div>
+
+</section> <!--MAIN CODE VIEW ENDS -->
+
+<script src="//code.jquery.com/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $('#run_code_btn').on('click', function(){
+      $( "#display_result" ).load( "php_pages/control_flow_and_loops.php #switch" ).hide().fadeToggle(2000);
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
